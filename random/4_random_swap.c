@@ -9,7 +9,7 @@ int main(){
         n[i] = i+1;
     }
     for(i = 0; i < 10; i++){
-        int j = i + rand() % (10-i) + 1;    // j = [i, 10]
+        int j = i + rand() % (11-i);    // j = [i, 10]
         int t = n[i];   //swap: not overlap
         n[i] = n[j];
         n[j] = t;
